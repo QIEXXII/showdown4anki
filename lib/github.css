@@ -20,24 +20,19 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
-
-body {
-  font-family: Helvetica, arial, sans-serif;
+.card {
   font-size: 14px;
   line-height: 1.6;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  text-align: left;
+  color: #333333;
   background-color: white;
-  padding: 30px;
   color: #333;
 }
 
-body > *:first-child {
-  margin-top: 0 !important;
-}
-
-body > *:last-child {
-  margin-bottom: 0 !important;
+code,
+tt,
+.card {
+  font-family: "微软雅黑", sans-serif;
 }
 
 a {
@@ -131,7 +126,6 @@ h1 {
 
 h2 {
   font-size: 24px;
-  border-bottom: 1px solid #cccccc;
   color: black;
 }
 
@@ -284,7 +278,10 @@ blockquote > :last-child {
 
 table {
   padding: 0;
+  border-collapse: collapse;
+  margin: auto;
 }
+
 table tr {
   border-top: 1px solid #cccccc;
   background-color: white;
@@ -299,7 +296,7 @@ table tr:nth-child(2n) {
 table tr th {
   font-weight: bold;
   border: 1px solid #cccccc;
-  text-align: left;
+  text-align: center;
   margin: 0;
   padding: 6px 13px;
 }
@@ -429,16 +426,6 @@ pre code {
   white-space: pre;
   border: none;
   background: transparent;
-}
-
-.highlight pre {
-  background-color: #f8f8f8;
-  border: 1px solid #cccccc;
-  font-size: 13px;
-  line-height: 19px;
-  overflow: auto;
-  padding: 6px 10px;
-  border-radius: 3px;
 }
 
 pre {
