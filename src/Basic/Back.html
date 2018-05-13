@@ -1,0 +1,14 @@
+{{FrontSide}}
+<hr id=answer>
+<div id="back">
+{{Back}}
+</div>
+<div id="backReplace"></div>
+
+<script>
+// Get 'back' Content and replace to 'backReplace'
+var backContent = document.getElementById("back"),
+    backReplaceContent = document.getElementById("backReplace");
+backReplaceContent.innerHTML = converter.makeHtml(backContent.innerText);
+backContent.innerHTML = "";
+</script>
